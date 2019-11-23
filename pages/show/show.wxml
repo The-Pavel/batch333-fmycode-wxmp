@@ -1,11 +1,16 @@
 <!--pages/show/show.wxml-->
-<view data-category="{{category.id}}">Welcome to {{story.name}}'s story!</view>
-
-<view>{{story.text}}</view>
+<view class="card">
+  <view class="title">Welcome to {{story.name}}'s story!</view>
+  <view class="text">{{story.text}}</view>
+</view>
 
 <view wx:for="{{story.comments}}" wx:key wx:for-item="comment">
-  <view>Posted on: {{comment.commented_at}}</view>
-  <view>{{comment.content}} - by {{comment.name}}</view>
+<view class="comment-card">
+  <view class="comment-date">Posted on: {{comment.commented_at}}</view>
+  <view class="comment-content">{{comment.content}} - by {{comment.name}}</view>
+</view>
+  
 </view>
 
 <button bindtap="goToEdit">Edit Story</button>
+<button bindtap="deleteStory" type="warn" style="margin-top: 20rpx;">Delete Story</button>

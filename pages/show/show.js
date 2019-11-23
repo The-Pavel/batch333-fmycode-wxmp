@@ -8,6 +8,32 @@ Page({
 
   },
 
+  deleteStory: function(e) {
+    const id = this.data.story.id
+    wx.showModal({
+      title: 'Are you sure?',
+      content: 'This action is permanent!',
+      cancelText: "Cancel",
+      confirmText: "OK!",
+      success(res) {
+        if (res.confirm) {
+          wx.request({
+            url: `http://localhost:3000/api/v1/stories/${id}`,
+            method: 'delete',
+            success: (res) => {
+              wx.reLaunch({
+                url: '/pages/stories/stories',
+              })
+            }
+          })
+        } else if (res.cancel) {
+          
+        }
+      }
+    })
+    
+  },
+
   goToEdit: function(e) {
     let id = this.data.story.id
     wx.navigateTo({

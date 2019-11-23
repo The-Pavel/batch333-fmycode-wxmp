@@ -4,7 +4,6 @@
   margin-top: 50rpx;
 }
 .submit-button {
-  width: 380rpx !important;
+  width: 420rpx !important;
   margin-top: 30rpx;
-
 }

@@ -3,6 +3,6 @@
   <form class="story-form" bindsubmit="updateStory">
     <input name="name" value="{{story.name}}" placeholder="Input name..."></input>
     <input name="text" value="{{story.text}}" placeholder="FMC text..."></input>
-    <button class='submit-button' form-type="submit">Create a FMC story</button>
+    <button class='submit-button' form-type="submit">Edit this story</button>
   </form>
 </view>
