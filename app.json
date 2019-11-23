@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/landing/landing",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/stories/stories",
+    "pages/new/new",
+    "pages/show/show",
+    "pages/edit/edit"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/stories/stories",
+        "text": "Stories",
+        "iconPath": "/images/Story.png",
+        "selectedIconPath": "/images/Story.png"
+      },
+      {
+        "pagePath": "pages/new/new",
+        "text": "New Story",
+        "iconPath": "/images/Create Visuals.png",
+        "selectedIconPath": "/images/Create Visuals.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "F*&K My Code",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

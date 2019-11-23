@@ -1,0 +1,9 @@
+.new-form {
+  text-align: center;
+  margin-top: 50rpx;
+}
+.submit-button {
+  width: 380rpx !important;
+  margin-top: 30rpx;
+
+}

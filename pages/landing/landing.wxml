@@ -1,0 +1,10 @@
+<view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://www.whzrgj.com/uploads/allimg/170503/15395223F-0.jpg);">
+  <view class="container">
+    <view class="h1">F*&K My Code</view>
+    <view class="p">The crazy syntax and style stories from our coding lives</view>
+  </view>
+  <view style="text-align: center;">
+    <button bindtap="goToStories" class="btn btn-flat" url="#">Check us out</button>
+  
+  </view>
+</view>

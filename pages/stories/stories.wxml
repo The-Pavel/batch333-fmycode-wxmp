@@ -1,0 +1,32 @@
+<!-- <view style="font-size: 50rpx;">Welcome batch {{batchNumber}}!</view>
+<view style="font-size: 50rpx;">Today is {{day}}</view>
+
+<view style="font-size: 50rpx;">Okay, I see your favorite language is {{favoriteCodingLang}}</view> -->
+
+<view wx:if="{{loggedIn}}">
+   <view wx:key wx:for="{{stories}}" wx:for-item="story">
+    <view data-id="{{story.id}}" data-name="banana" class="card-product" bindtap="cardClick">
+    <!-- JS code:
+    cardClick: function(event) {
+      console.log(event)
+      let id = event.currentTarget.dataset.id
+      wx.navigateTo({
+        url: `/pages/show/show?id=${id}`,
+      })
+    }
+     -->
+    <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <view class="card-product-infos">
+      <view class="h2">{{story.name}}</view>
+      <view class="p">{{story.text}}</view>
+    </view>
+  </view>
+  </view>
+</view>
+<view wx:else>
+  <button bindtap="logInUser" style="margin: 50rpx auto; font-size: 50rpx;">Log in!</button>
+</view>
+
+
+
+ 
